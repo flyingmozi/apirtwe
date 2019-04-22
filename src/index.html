@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mui.css">
+	<style>
+		.top{
+			width: 1000px;
+			height: 700px;
+			margin: 0 auto;
+			border: 1px solid #242424;
+			display: flex;
+		}
+		.top>div{
+			width: 50%;
+			height: 100%;
+		}
+		.left>h2{
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			font-size: 17px;
+			display: flex;
+			justify-content: sapce-around;
+		}
+			
+		.left>h2>div{
+			display: inline-block;
+			width: 140px;
+			height: 100%;
+			text-align: center;
+		}
+        .left>h2>div:nth-child(1){
+            margin-left: 100px;
+        }
+        .left>form{
+            width: 100%;
+            height: 650px;
+        }
+			
+		li{
+			list-style: none;
+            height: 30px;
+            line-height: 30px;
+            display:flex;
+            align-items: center;
+		}
+        li>span{
+            width: 20%;
+            height: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="left">
+			<h2><div>收入</div>
+            <div>支出</div></h2>
+            
+            <form action="#">
+                <p>金额</p>
+                <input type="text" id="first">
+                <p>日期</p>
+                <input type="text" id="second">
+                <p>备注</p>
+                <input type="text" id="third">
+                <select name="" id="mes">
+                    <option value="">分类</option>
+                    <option value="">衣</option>
+                    <option value="">食</option>
+                    <option value="">住</option>
+                    <option value="">行</option>
+                </select>
+                <select name="" id="las">
+                    <option value="">成员</option>
+                    <option value="">自己</option>
+                    <option value="">恋人</option>
+                    <option value="">父母</option>
+                </select>
+				<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="btn">确定</button>
+            </form>
+		</div>
+		<div class="right">
+			<ul id="uls">
+				<li>
+					<span>日期</span>
+					<span>金额</span>
+					<span>分类</span>
+					<span>成员</span>
+					<span>备注</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+    
+
+    <script src="./js/require.js" defer async data-main="./js/index.js"></script>
+</body>
+</html>
